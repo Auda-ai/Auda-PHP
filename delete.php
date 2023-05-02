@@ -2,7 +2,7 @@
 if(isset($_GET["id"])){
     $id = $_GET["id"];
 
-    $servername = "localhost";
+$servername = "localhost";
 $username ="root";
 $password="";
 $database="student_db";

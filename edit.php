@@ -40,7 +40,7 @@ if(!$row) {
 $fname=$row["fname"];
 $lname=$row["lname"];
 $email=$row["email"];
-$password=$row["password"];
+$password=sha1($row["password"]);
 
 } else{
 // POST Method: update the data of the user
@@ -49,7 +49,7 @@ $id = $_POST["id"];
 $fname=$_POST["fname"];
 $lname=$_POST["lname"];
 $email=$_POST["email"];
-$password=$_POST["password"];
+$password=sha1($_POST["password"]);
 
 do {
     if(empty($fname) || empty($lname) || empty($email) || empty($password)){
