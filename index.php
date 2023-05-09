@@ -10,7 +10,10 @@
 <body>
     <div class="container my-5">
 <!-- <h2>LIST OF USERS</h2> -->
-<a class="btn btn-primary" href="/Users/create.php" role="button">Add user</a><br>
+<a class="btn btn-primary" href="/Users/create.php" role="button">Add user</a><br><br>
+<form method="post" action="export.php">
+    <input class='btn btn-primary btn-sm' type="submit" name="export" value="CSV Export"/>
+</form><br>
 <table class="table">
     <thead>
         <tr>
